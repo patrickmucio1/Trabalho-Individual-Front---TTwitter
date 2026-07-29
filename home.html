@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página inicial da rede social TTwitter."
+    />
+    <meta name="author" content="Patrick Mucio" />
+    <title>Home | TTwitter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="home-body">
+    <header class="topbar">
+      <a class="topbar-logo-link" href="./home.html" aria-label="Página inicial">
+        <img class="topbar-logo" src="./assets/logo.png" alt="TTwitter" />
+      </a>
+
+      <form class="search-form" role="search">
+        <label class="sr-only" for="search">Buscar</label>
+        <input id="search" type="search" placeholder="Buscar" />
+        <button type="submit" aria-label="Pesquisar">
+          <img src="./assets/search.png" alt="" />
+        </button>
+      </form>
+    </header>
+
+    <div class="home-layout">
+      <aside class="sidebar" aria-label="Menu principal">
+        <nav>
+          <a class="sidebar-link" href="./home.html" aria-label="Página inicial">
+            <img src="./assets/home.png" alt="" />
+          </a>
+
+          <a class="sidebar-link" href="#" aria-label="Notificações">
+            <img src="./assets/bell.png" alt="" />
+          </a>
+
+          <a class="sidebar-link" href="#" aria-label="Mensagens">
+            <img src="./assets/comments.png" alt="" />
+          </a>
+
+          <a class="sidebar-link" href="#" aria-label="Configurações">
+            <img src="./assets/settings.png" alt="" />
+          </a>
+        </nav>
+      </aside>
+
+      <main class="feed">
+        <section class="composer" aria-labelledby="composer-title">
+          <h1 id="composer-title" class="sr-only">Criar publicação</h1>
+
+          <textarea
+            aria-label="Texto da publicação"
+            placeholder="No que está pensando...?"
+          ></textarea>
+
+          <div class="composer-actions">
+            <div class="attachment-buttons">
+              <button type="button" aria-label="Adicionar imagem">
+                <img src="./assets/image.png" alt="" />
+              </button>
+
+              <button type="button" aria-label="Adicionar emoji">
+                <img src="./assets/emoji.png" alt="" />
+              </button>
+
+              <button type="button" aria-label="Adicionar link">
+                <img src="./assets/link.png" alt="" />
+              </button>
+            </div>
+
+            <button class="post-button" type="button">Postar</button>
+          </div>
+        </section>
+
+        <article class="post-card">
+          <img
+            class="post-main-image"
+            src="./assets/post-image.png"
+            alt="Ilustração de uma jovem de cabelo rosa segurando um gato"
+          />
+
+          <div class="post-info">
+            <div class="post-user">
+              <span class="avatar" aria-hidden="true"></span>
+              <strong>@usuario</strong>
+            </div>
+
+            <div class="post-reactions" aria-label="Ações da publicação">
+              <button type="button" aria-label="Comentar">
+                <img src="./assets/message.png" alt="" />
+              </button>
+
+              <button type="button" aria-label="Curtir">
+                <img src="./assets/like.png" alt="" />
+              </button>
+
+              <button type="button" aria-label="Favoritar">
+                <img src="./assets/heart.png" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <p class="post-text">
+            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+          </p>
+        </article>
+      </main>
+
+      <aside class="suggestions" aria-labelledby="suggestions-title">
+        <h2 id="suggestions-title">
+          <span class="desktop-suggestions-title">Pessoas que você talvez conheça</span>
+          <span class="mobile-suggestions-title">Talvez você conheça</span>
+        </h2>
+
+        <ul>
+          <li>
+            <span class="suggestion-avatar" aria-hidden="true"></span>
+            <span>@usuario</span>
+            <button type="button">Adicionar</button>
+          </li>
+
+          <li>
+            <span class="suggestion-avatar" aria-hidden="true"></span>
+            <span>@usuario</span>
+            <button type="button">Adicionar</button>
+          </li>
+
+          <li>
+            <span class="suggestion-avatar" aria-hidden="true"></span>
+            <span>@usuario</span>
+            <button type="button">Adicionar</button>
+          </li>
+
+          <li>
+            <span class="suggestion-avatar" aria-hidden="true"></span>
+            <span>@usuario</span>
+            <button type="button">Adicionar</button>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </body>
+</html>
