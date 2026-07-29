@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página de login da plataforma TTwitter."
+    />
+    <meta name="author" content="Patrick Mucio" />
+    <title>Login | TTwitter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="auth-page login-page">
+      <section class="auth-logo-area" aria-label="Identidade visual do TTwitter">
+        <img
+          class="auth-logo"
+          src="./assets/logo.png"
+          alt="Logotipo do TTwitter"
+        />
+      </section>
+
+      <section class="auth-card login-card">
+        <header class="auth-header">
+          <h1>Bem vindo a plataforma TTwitter</h1>
+        </header>
+
+        <form class="auth-form" action="./home.html" method="get">
+          <div class="field">
+            <label for="login-email">Email</label>
+            <input
+              type="email"
+              id="login-email"
+              name="email"
+              placeholder="example@email.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="login-password">Senha</label>
+
+            <div class="password-field">
+              <input
+                type="password"
+                id="login-password"
+                name="password"
+                placeholder="•••••••••"
+                autocomplete="current-password"
+                required
+              />
+
+              <img
+                class="eye-icon"
+                src="./assets/eye.png"
+                alt=""
+                aria-hidden="true"
+              />
+            </div>
+          </div>
+
+          <a class="forgot-password" href="#">Esqueci minha senha</a>
+
+          <button class="primary-button" type="submit">Entrar</button>
+        </form>
+
+        <a class="auth-main-link" href="./cadastro.html">Registrar</a>
+
+        <footer class="login-terms">
+          <p>
+            Li e estou de acordo com os
+            <a href="#">Termos</a> e
+            <a href="#">Condições de uso</a>.
+          </p>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
